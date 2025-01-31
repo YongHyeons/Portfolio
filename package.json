@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "start": "npx vite dev",
-    "build": "npx vite optimize & npx vite build",
+    "build": "vite build",
+    "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
