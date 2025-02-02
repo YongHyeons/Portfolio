@@ -225,4 +225,12 @@ const p_projects = [
         techStack: ['HTML', 'CSS'],
         link: 'https://github.com/YongHyeons/Coffee-Shop.git',
     },
+    {
+        image: '/img/thumbnail-new.png',
+        title: '이용현의 포트폴리오',
+        period: '2025.01.20 ~',
+        description: '신입 백엔드 개발자 이용현의 포트폴리오입니다.',
+        techStack: ['React', 'Chakra UI', 'Vercel'],
+        link: 'https://github.com/YongHyeons/Portfolio.git',
+    },
 ];
