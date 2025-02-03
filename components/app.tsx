@@ -26,9 +26,22 @@ export default function() {
                     </Box>
 
                     {/* About Me and Contact Section */}
-                    <Box display="flex" flexDirection={["column", "row"]} gap={[4, 8]} mt={10} mb={8}>
+                    <Box 
+                        display="flex" 
+                        flexDirection={["column", "row"]} 
+                        justifyContent="space-between"
+                        mt={10} 
+                        mb={8}
+                    >
                         {/* ABOUT ME */}
-                        <Box w={["100%", "60%"]} bg="white" p={[4, 6]} borderRadius="lg" boxShadow="md" border="4px solid rgb(17, 79, 95)">
+                        <Box 
+                            w={["100%", "63%"]} 
+                            bg="white" 
+                            p={[4, 6]} 
+                            borderRadius="lg" 
+                            boxShadow="md" 
+                            border="4px solid rgb(17, 79, 95)"
+                        >
                             <Text fontSize={["xl", "2xl"]} fontWeight="bold">ABOUT ME</Text>
                             <Text mt={4} fontSize={["sm", "md"]}>
                                 안녕하세요, 신입 백엔드 개발자입니다. 다양한 기술을 익히고, 문제를 해결하는 것을 즐기며, 깔끔하고 유지보수하기 쉬운 코드를 작성하는 것을 목표로 하고 있습니다.
@@ -36,14 +49,21 @@ export default function() {
                         </Box>
 
                         {/* CONTACT */}
-                        <Box w={["100%", "35%"]} bg="white" p={[4, 6]} borderRadius="lg" boxShadow="md" border="4px solid rgb(17, 79, 95)">
+                        <Box 
+                            w={["100%", "35%"]} 
+                            bg="white" 
+                            p={[4, 6]} 
+                            borderRadius="lg" 
+                            boxShadow="md" 
+                            border="4px solid rgb(17, 79, 95)"
+                        >
                             <Text fontSize={["xl", "2xl"]} fontWeight="bold">CONTACT</Text>
                             <Text mt={4} fontSize={["sm", "md"]}>Email: iyonghyeon1@gmail.com</Text>
                             <HStack fontSize={["sm", "md"]}>
                                 <Text>Github: </Text>
                                 <Link href='https://github.com/YongHyeons' isExternal>
                                     <HStack>
-                                        <Text isTruncated>https://github.com/YongHyeons</Text>
+                                        <Text noOfLines={1}>https://github.com/YongHyeons</Text>
                                         <Image src='/img/git.svg' alt="gitlogo" boxSize={["20px", "24px"]} />
                                     </HStack>
                                 </Link>
