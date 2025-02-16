@@ -7,7 +7,7 @@ import { PinInput, PinInputField, Button } from '@chakra-ui/react';
 import { Search2Icon, SearchIcon, ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 import { Wrap, WrapItem } from '@chakra-ui/react';
 
-export default function() {
+export default function () {
     return (
         <Box>
             {/* Header */}
@@ -26,20 +26,20 @@ export default function() {
                     </Box>
 
                     {/* About Me and Contact Section */}
-                    <Box 
-                        display="flex" 
-                        flexDirection={["column", "row"]} 
+                    <Box
+                        display="flex"
+                        flexDirection={["column", "row"]}
                         justifyContent="space-between"
-                        mt={10} 
+                        mt={10}
                         mb={8}
                     >
                         {/* ABOUT ME */}
-                        <Box 
-                            w={["100%", "63%"]} 
-                            bg="white" 
-                            p={[4, 6]} 
-                            borderRadius="lg" 
-                            boxShadow="md" 
+                        <Box
+                            w={["100%", "63%"]}
+                            bg="white"
+                            p={[4, 6]}
+                            borderRadius="lg"
+                            boxShadow="md"
                             border="4px solid rgb(17, 79, 95)"
                         >
                             <Text fontSize={["xl", "2xl"]} fontWeight="bold">ABOUT ME</Text>
@@ -49,12 +49,12 @@ export default function() {
                         </Box>
 
                         {/* CONTACT */}
-                        <Box 
-                            w={["100%", "35%"]} 
-                            bg="white" 
-                            p={[4, 6]} 
-                            borderRadius="lg" 
-                            boxShadow="md" 
+                        <Box
+                            w={["100%", "35%"]}
+                            bg="white"
+                            p={[4, 6]}
+                            borderRadius="lg"
+                            boxShadow="md"
                             border="4px solid rgb(17, 79, 95)"
                         >
                             <Text fontSize={["xl", "2xl"]} fontWeight="bold">CONTACT</Text>
@@ -116,6 +116,8 @@ export default function() {
                                         <WrapItem><Badge colorScheme="pink" p={2}>HTML</Badge></WrapItem>
                                         <WrapItem><Badge colorScheme="cyan" p={2}>CSS</Badge></WrapItem>
                                         <WrapItem><Badge colorScheme="yellow" p={2}>JavaScript</Badge></WrapItem>
+                                        <WrapItem><Badge colorScheme="green" p={2}>Nest.js</Badge></WrapItem>
+                                        <WrapItem><Badge colorScheme="red" p={2}>Chakra UI</Badge></WrapItem>
                                     </Wrap>
                                 </Stack>
                             </Box>
@@ -124,12 +126,31 @@ export default function() {
                                     <Text fontSize={["md", "lg"]} fontWeight="bold" w={[null, 100]}>TOOL</Text>
                                     <Wrap spacing={2}>
                                         <WrapItem><Badge colorScheme="purple" p={2}>Git</Badge></WrapItem>
-                                        <WrapItem><Badge colorScheme="red" p={2}>Docker</Badge></WrapItem>
-                                        <WrapItem><Badge colorScheme="green" p={2}>MySQL</Badge></WrapItem>
+                                        <WrapItem><Badge colorScheme="red" p={2}>Velcel</Badge></WrapItem>
+                                        <WrapItem><Badge colorScheme="cyan" p={2}>Oracle</Badge></WrapItem>
+                                        <WrapItem><Badge colorScheme="yellow" p={2}>Eclipse</Badge></WrapItem>
+                                        <WrapItem><Badge colorScheme="blue" p={2}>VSCode</Badge></WrapItem>
+                                        <WrapItem><Badge colorScheme="green" p={2}>SQL Developer</Badge></WrapItem>
                                     </Wrap>
                                 </Stack>
                             </Box>
                         </Grid>
+                    </Box>
+
+
+                    {/* Certifications Section */}
+                    <Box w="100%" bg="white" p={[4, 5]} borderRadius="lg" boxShadow="md" mb={8} border="4px solid rgb(17, 79, 95)">
+                        <Text fontSize={["xl", "2xl"]} fontWeight="bold">CERTIFICATIONS</Text>
+                        <VStack align="stretch" mt={4} spacing={4}>
+                            <Stack direction={["column", "row"]} spacing={[2, 4]} align={["flex-start", "center"]}>
+                                <Text fontSize={["sm", "md"]} fontWeight="bold" minW={["auto", "150px"]}>2021.06</Text>
+                                <Text fontSize={["sm", "md"]}>정보처리산업기사</Text>
+                            </Stack>
+                            <Stack direction={["column", "row"]} spacing={[2, 4]} align={["flex-start", "center"]}>
+                                <Text fontSize={["sm", "md"]} fontWeight="bold" minW={["auto", "150px"]}>2024.07</Text>
+                                <Text fontSize={["sm", "md"]}>네트워크관리사 2급</Text>
+                            </Stack>
+                        </VStack>
                     </Box>
 
                     {/* Projects Section */}
