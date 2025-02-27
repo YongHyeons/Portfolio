@@ -22,7 +22,7 @@ export default function () {
                 <Box maxW="1200px" margin="0 auto" px={[2, 0]}>
                     {/* Banner */}
                     <Box borderRadius="lg" border="1px solid rgb(224,236,239)" overflow="hidden">
-                        <Image src={"/img/banner3.png"} w="100%" h="auto" />
+                        <Image src={"/img/bannerTest.png"} w="100%" h="auto" />
                     </Box>
 
                     {/* About Me and Contact Section */}
