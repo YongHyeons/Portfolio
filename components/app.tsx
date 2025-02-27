@@ -166,7 +166,9 @@ export default function () {
                                             alt={project.title}
                                             width={["100%", "300px"]}
                                             height={["200px", "300px"]}
-                                            objectFit="cover"
+                                            objectFit="contain"  // "cover" 대신 "contain" 사용
+                                            maxH="300px"        // 최대 높이 제한
+                                            maxW="300px"
                                         />
                                         <VStack align="flex-start" w={["100%", "50%"]} spacing={2}>
                                             <Text fontSize={["lg", "xl"]} fontWeight="bold">{project.title}</Text>
@@ -229,6 +231,15 @@ export default function () {
 }
 
 const t_projects = [
+    {
+        image: '/img/TalkVillageLogo.svg',
+        title: 'TalkVlliage',
+        period: '2024.12.20 ~ (개발중)',
+        personnel: '5명',
+        description: '기초부터 고급 영어까지 학습을 도와줄 수 있는 웹 사이트입니다.',
+        techStack: ['JAVA', 'Spring Boot', 'React', 'ChakraUI', 'SCSS', 'Oracle DB'],
+        link: 'https://github.com/YongHyeons/TalkVillage.git',
+    },
     {
         image: '/img/cmjjmain.png',
         title: '취미존중',
