@@ -10,7 +10,6 @@ import { Wrap, WrapItem } from '@chakra-ui/react';
 export default function () {
     return (
         <Box>
-            {/* Header */}
             <Box p={[3, 5]} w="100%" h={["70px", "100px"]} display="flex" alignItems="center" bg="rgb(235, 249, 255)">
                 <Center w="100%">
                     <Text fontSize={["4xl", "6xl"]} fontWeight="bold" color="rgb(17, 79, 95)">Portfolio</Text>
@@ -18,14 +17,11 @@ export default function () {
             </Box>
 
             <Box minH="100vh" p={[4, 8]} bg="rgb(235, 249, 255)">
-                {/* 전체 컨텐츠를 중앙에 배치하기 위한 Box */}
                 <Box maxW="1200px" margin="0 auto" px={[2, 0]}>
-                    {/* Banner */}
                     <Box borderRadius="lg" border="1px solid rgb(224,236,239)" overflow="hidden">
                         <Image src={"/img/bannerTest.png"} w="100%" h="auto" />
                     </Box>
 
-                    {/* About Me and Contact Section */}
                     <Box
                         display="flex"
                         flexDirection={["column", "row"]}
@@ -33,7 +29,6 @@ export default function () {
                         mt={10}
                         mb={8}
                     >
-                        {/* ABOUT ME */}
                         <Box
                             w={["100%", "63%"]}
                             bg="white"
@@ -48,7 +43,6 @@ export default function () {
                             </Text>
                         </Box>
 
-                        {/* CONTACT */}
                         <Box
                             w={["100%", "35%"]}
                             bg="white"
@@ -80,7 +74,6 @@ export default function () {
                         </Box>
                     </Box>
 
-                    {/* Education Section */}
                     <Box w="100%" bg="white" p={[4, 5]} borderRadius="lg" boxShadow="md" mb={8} border="4px solid rgb(17, 79, 95)">
                         <Text fontSize={["xl", "2xl"]} fontWeight="bold">EDUCATION</Text>
                         <Stack direction={["column", "row"]} mt={4} spacing={[2, 4]} align={["flex-start", "center"]}>
@@ -95,7 +88,6 @@ export default function () {
                         </Stack>
                     </Box>
 
-                    {/* Skills Section */}
                     <Box w="100%" bg="white" p={[4, 5]} borderRadius="lg" boxShadow="md" mb={8} border="4px solid rgb(17, 79, 95)">
                         <Text fontSize={["xl", "2xl"]} fontWeight="bold">SKILLS</Text>
                         <Grid templateColumns="repeat(1, 1fr)" gap={[4, 6]} mt={4}>
@@ -153,9 +145,7 @@ export default function () {
                         </VStack>
                     </Box>
 
-                    {/* Projects Section */}
                     <Box w="100%" bg="white" p={[4, 5]} borderRadius="lg" boxShadow="md" border="4px solid rgb(17, 79, 95)">
-                        {/* Team Section */}
                         <Text fontSize={["xl", "2xl"]} fontWeight="bold" textAlign="center">Team Projects</Text>
                         <VStack spacing={[4, 5]} mt={4}>
                             {t_projects.map((project, index) => (
@@ -166,8 +156,8 @@ export default function () {
                                             alt={project.title}
                                             width={["100%", "300px"]}
                                             height={["200px", "300px"]}
-                                            objectFit="contain"  // "cover" 대신 "contain" 사용
-                                            maxH="300px"        // 최대 높이 제한
+                                            objectFit="contain"
+                                            maxH="300px"
                                             maxW="300px"
                                         />
                                         <VStack align="flex-start" w={["100%", "50%"]} spacing={2}>
@@ -252,7 +242,7 @@ const t_projects = [
     {
         image: '/img/calendermain.png',
         title: '캘린더 프로그램',
-        period: '2024.08.05 ~ 2024.09.05',
+        period: '2019.10 ~ 2019.11',
         personnel: '2명',
         description: 'PC사용자가 자신의 일정을 효율적으로 관리하거나 계획하기 위해 사용하는 프로그램입니다.',
         techStack: ['JAVA', 'MySQL'],
@@ -264,7 +254,7 @@ const p_projects = [
     {
         image: '/img/bookmain.jpg',
         title: '도서 관리 및 게시판',
-        period: '2024.08.05 ~ 2024.09.05',
+        period: '2022.09 ~ 2022.10',
         description: '도서 관리와 커뮤니티 기능을 통합하여, 도서 애호가들이 효율적으로 책을 관리하고 교류할 수 있도록 돕기 위한 사이트입니다.',
         techStack: ['JAVA', 'JSP', 'HTML', 'CSS', 'MySQL'],
         link: 'https://github.com/YongHyeons/Book-Board.git',
@@ -272,7 +262,7 @@ const p_projects = [
     {
         image: '/img/coffeemain.png',
         title: '커피 전문점 사이트',
-        period: '2024.08.05 ~ 2024.09.05',
+        period: '2016.05 ~ 2016.06',
         description: '커피 전문점에서 제공하는 다양한 음료, 브레드, 그리고 MD 상품에 대한 포괄적인 정보를 제공하는 사이트 입니다.',
         techStack: ['HTML', 'CSS'],
         link: 'https://github.com/YongHyeons/Coffee-Shop.git',
